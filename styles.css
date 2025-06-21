@@ -355,23 +355,41 @@ header.liquid {
 .project-card {
     background: #212121;
     border-radius: 20px;
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
-    padding: 32px 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s;
     border: 2px solid transparent;
-    min-width: 350px;
-    min-height: 250px;
+    min-width: 300px;
+    max-width: 400px;
+    overflow: hidden; /* prevents inner spacing issues */
 }
+
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
 .project-card img {
     width: 100%;
-    height: 210px;           /* or any fixed height you prefer */
-    object-fit: cover;       /* ensures the image covers the area without distortion */
-    border-radius: 12px;
-    margin-bottom: 18px;
+    height: 300px;
+    object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
 }
+
+.project-card img:hover {
+    transform: scale(1.5); /* no translate needed */
+}
+
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 
 .project-card h3 {
     font-size: 1.3rem;
@@ -458,6 +476,15 @@ header.liquid {
 
 .icon-text img{
     width: 10%;
+}
+
+.icon-text a {
+  color: inherit; /* Match parent text color */
+  text-decoration: none;
+}
+
+.icon-text a:hover {
+  text-decoration: underline;
 }
 
 .form-row {
