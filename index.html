@@ -241,51 +241,79 @@
 
 <!-- contact us -->
 
-<section id="ContactMe">
+    <section id="ContactMe">
 
+        <!-- Header and Two-Column Container Wrapper -->
+    <div class="contact-wrapper">
     <div class="contact-header">
-        <h2><span class="gradient-text">Contact</span> Me</h2>
+        <h2 style="font-size: 2.5rem;"><span class="gradient-text">Contact</span> Me</span>
     </div>
 
     <div class="contact-container">
-        <div class="col">
-            <h2>Let's talk about your <span class="gradient-text">Project</span></h2>
+            <!-- First Column: Info -->
+            <div class="col">
+                <h2 style="font-size: 2.5rem;">Let's talk about your <span class="gradient-text">Project</span></h2>
 
-            <div class="icon-text">
-                <img src="images/mail.png" alt="" width="30">
-                <p>hazelannmcarillo@gmail.com</p>
+                <div class="icon-text">
+                    <img src="images/mail.png" alt="" width="30">
+                    <p>hazelannmcarillo@gmail.com</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="images/location.png" alt="" width="30">
+                    <p>8.1574° N, 125.1249° E</p>
+                </div>
             </div>
 
-            <div class="icon-text">
-                <img src="images/location.png" alt="" width="30">
-                <p>Malaybalay City, Bukidnon</p>
-            </div>
-        </div>
+        <!-- Second Column: Form -->
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname" style="margin-bottom: 10px;">Name <span style="color: red">*</span></label>
+                            <input type="text" id="fname" name="fname" placeholder="Ex. Mary Jane" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname" style="margin-bottom: 10px;">Email <span style="color: red">*</span></label>
+                            <input type="email" id="lname" name="lname" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
 
-        <div class="col">
-            <div class="info">
-                <p>Name</p>
-                <input type="text" placeholder="Ex. Mary Jane">
-                <p>Email</p>
-                <input type="text" placeholder="example@gmail.com">
+                    <div class="form-group">
+                        <label for="subject" style="margin: 15px 0;">Subject <span style="color: red">*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" style="margin: 15px 0;">Message <span style="color: red">*</span></label>
+                        <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+                    </div>
+
+                    <div class="submit-form">
+                        <button class="contact-submitbtn">Submit</button>
+                    </div>
+                </form>
             </div>
-            
-        
-        </div>
+    </div>
     </div>
 
 
-</section>
 
-
-
-
-
+    </section>
 
 </main>
 
 
-<footer>
+<footer class="footer">
+
+    <div class="socials">
+        <a href="https://github.com/zeruann"><i class="devicon-github-original"></i></a>
+        <a href="https://www.linkedin.com/in/hazel-ann-m-carillo-1a0804368/"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025 Hazel’s Portfolio. All rights reserved.</p>
+    </div>
     
 </footer>
 
