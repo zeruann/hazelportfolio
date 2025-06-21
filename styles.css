@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 * {
     font-family: 'Inter', sans-serif;
     padding: 0;
@@ -529,4 +534,37 @@ footer{
 .socials a i:hover {
     background-color: grey;
 
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background: linear-gradient(90deg, #674188, #AB47BC);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Fade transition setup */
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks when invisible */
+  transition: opacity 0.5s ease;
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto; /* Enable clicks */
+}
+
+#backToTop:hover {
+  background-color: #45a049;
 }
